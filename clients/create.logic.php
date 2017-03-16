@@ -13,7 +13,7 @@
 		$result = $db->query($query);
 	
     // Tell the browser to go back to the index page.
-    // header("Location: ./");	
+    header("Location: ./");	
     exit();
 	endif;
 

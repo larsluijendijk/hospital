@@ -28,7 +28,7 @@
 <?php
 	foreach($patients as $patient):
 ?>
-<option value="<?=$patient['id']?>"><?=$patient['name']?></option>
+<option value="<?=$patient['name']?>"><?=$patient['name']?></option>
 <?php
 	endforeach;
 ?>
