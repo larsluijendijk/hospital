@@ -1,7 +1,6 @@
 <?php
 	require_once "edit.logic.php";
 	include "../common/header.php";
-	include "patientshow.php";
 ?>
 	<h1>Edit client</h1>
 	<form method="post">
@@ -22,16 +21,6 @@
 			<label for="name">address:</label>
 			<input type="text" id="address" name="address" value="<?=$client['address']?>">
 		</div>
-		<label for="name">patient:</label>
-<select id="select" name="select">
-	<?php
-		foreach($patients as $patient):
-	?>
-		<option value="<?=$patient['name']?>"><?=$patient['name']?></option>
-	<?php
-		endforeach;
-	?>
-</select>
 		<div>
 			<label></label>
 			<input type="submit" value="Save">

@@ -26,10 +26,9 @@
 		$lastname = $db->escape_string($_POST["lastname"]);
 		$telephone = $db->escape_string($_POST["telephone"]);
 		$address = $db->escape_string($_POST["address"]);
-		$patient = $db->escape_string($_POST["select"]);
 		
 		// Prepare query and execute
-		$query = "update client set firstname='$firstname', lastname='$lastname', telephone='$telephone', address='$address', patient_id='$patient' where id=$id";
+		$query = "update client set firstname='$firstname', lastname='$lastname', telephone='$telephone', address='$address' where id=$id";
 		$result = $db->query($query);
 	
     // Tell the browser to go back to the index page.

@@ -12,9 +12,9 @@
 				<th>Lastname</th>
 				<th>Telephone</th>
 				<th>Address</th>
+				<th>Patient</th>
 				<th>Edit</th>
 				<th>Delete</th>
-				<th>Patient</th>
 			</tr>
 		</thead>
 		</tbody>
@@ -26,9 +26,10 @@
 				<td><?=$client['lastname']?></td>
 				<td><?=$client['telephone']?></td>
 				<td><?=$client['address']?></td>
+				<td><?=$client['patient_id']?></td>
 				<td class="center"><a href="edit.php?id=<?=$client['id']?>">edit</a></td>
 				<td class="center"><a href="delete.php?id=<?=$client['id']?>">delete</a></td>
-			    <td class="center"><?=$client['patient_id']?></td>
+			    
 				
 			</tr>
 
