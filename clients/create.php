@@ -24,14 +24,15 @@
 		<div>
 			<label for="name">Patient:</label>
 			<br>
+			<select>
 <?php
 	foreach($patients as $patient):
 ?>
-		  <input type="radio" id="select" name="select" value="<?=$patient['name']?>">  <?=$patient['name']?><br>
+<option value="<?=$patient['name']?>"><?=$patient['name']?><br></option>
 <?php
 	endforeach;
 ?>
-
+</select>
 		</div>
 			<input type="submit" value="Save">
 		</div>
