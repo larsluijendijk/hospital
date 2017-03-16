@@ -24,11 +24,11 @@
 		<div>
 			<label for="name">Patient:</label>
 			<br>
-			<select>
+			<select id="select" name="select">
 <?php
 	foreach($patients as $patient):
 ?>
-<option value="<?=$patient['name']?>"><?=$patient['name']?><br></option>
+<option value="<?=$patient['id']?>"><?=$patient['name']?></option>
 <?php
 	endforeach;
 ?>
